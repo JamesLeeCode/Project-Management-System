@@ -27,6 +27,141 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    .containerLogin
+    {
+      font-family: Arial, Helvetica, sans-serif;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        background-color: white;
+        background: white;
+        width: 65%;
+        margin: 10% auto;
+        border-radius: 5px;
+        margin-top: -15px;
+    }
+
+    .content-holder
+    {
+      background-color: white;
+        text-align: center;
+        color: white;
+        font-size: 14px;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        margin-top: 1px;
+        padding: 20px;
+    }
+
+    .content-holder h2
+    {
+        font-size: 40px;
+        margin: 20px auto;
+    }
+
+    .content-holder p
+    {
+        margin: 30px auto;
+    }
+
+    .content-holder button
+    {
+        border:none;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 6px;
+        background-color: white;
+        width: 150px;
+        margin: 20px auto;
+    }
+
+
+    .box-2{
+        background-color: white;
+
+        margin: 5px;
+    }
+
+    .login-form-container
+    {
+        text-align: center;
+        margin-top: 10%;
+
+    }
+
+    .login-form-container h1
+    {
+        color: black;
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .input-field
+    {
+        box-sizing: border-box;
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 7px;
+        border: 1px solid rgb(168, 168, 168);
+        width: 300px;
+        outline: none;
+    }
+
+    .login-button{
+        box-sizing: border-box;
+        color: white;
+        font-size: 14px;
+        padding: 13px;
+        border-radius: 7px;
+        border: none;
+        width: 250px;
+        outline: none;
+        background-color: rgb(56, 102, 189);
+    }
+
+
+
+    .button-2
+    {
+        display: none;
+    }
+
+
+
+
+
+    .signup-form-container
+    {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-60%);
+        text-align: center;
+        display: none;
+    }
+
+
+    .signup-form-container h1
+    {
+        color: black;
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .signup-button{
+        box-sizing: border-box;
+        color: white;
+        font-size: 14px;
+        padding: 13px;
+        border-radius: 7px;
+        border: none;
+        width: 250px;
+        outline: none;
+        background-color: rgb(56, 189, 149);
+    }
+
+</style>
 </head>
 
 <body>
@@ -53,7 +188,7 @@
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="departmentLogin.html"> Department Login </a>
+                  <a class="nav-link" href="about.html"> Department Login </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="service.html"> Contractors Login </a>
@@ -192,116 +327,51 @@
       </div>
     </section>
     <!-- end slider section -->
-  </div>
-  <div class="bg">
 
 
-
-    <!-- end about section -->
-
-    <!-- service section -->
-
-    <section class="service_section layout_padding-bottom">
-      <div class="container">
-        <div class="custom_heading-container">
-          <h3 class=" ">
-            PROJECT MANAGEMENT SYSTEM
-          </h3>
+          <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        transition: 0.3s; width: 70% ;margin: auto; height: 400px  ">
+          <div style="height: 50px; width:100%">
+        <div class="containerLogin">
+        <!--Data or Content-->
+        <div class="box-1">
+            <div class="content-holder">
+              <img src="images/depLogo.jpg" alt="departmentLogo" style="width:330px;height:330px;">
+            </div>
         </div>
-        <p class="">
-          Providing accurate information, live and available immediately in  a simple and understandable format
-        </p>
-        <div class="service_container ">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="box b-1">
-                <div class="img-box">
-                  <img src="images/s-1.jpg" alt="">
-                </div>
-                <div class="detail-box">
-                  <h6>
-                    Inspection Request
-                  </h6>
-                  <p>
-                    Recieve Inspection Requests in time and electronically
-                  </p>
-                  <div class="btn-box">
-                    <a href="">
-                      Read More
-                    </a>
-                    <hr>
-                  </div>
-                </div>
+
+
+        <!--Forms-->
+
+        <div class="box-2">
+            <div class="login-form-container">
+              <div class="custom_heading-container">
+                <h3 class=" ">
+                  Department Login
+                </h3>
               </div>
+              <div style="height: 20px">
+
+               </div>
+                <input type="text" placeholder="Username" class="input-field">
+                <br><br>
+                <input type="password" placeholder="Password" class="input-field">
+                <br><br>
+                <button class="login-button" type="button">Login</button>
             </div>
-            <div class="col-md-3">
-              <div class="box b-2">
-                <div class="img-box">
-                  <img src="images/s-2.jpg" alt="">
-                </div>
-                <div class="detail-box">
-                  <h6>
-                    On-site Inspection
-                  </h6>
-                  <p>
-                    Conduct Inspections on-site electronically
-                  </p>
-                  <div class="btn-box">
-                    <a href="">
-                      Read More
-                    </a>
-                    <hr>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="box b-3">
-                <div class="img-box">
-                  <img src="images/s-3.jpg" alt="">
-                </div>
-                <div class="detail-box">
-                  <h6>
-                    Invoice Tracking
-                  </h6>
-                  <p>
-                    Easly get Invoices in real-time electronically
-                  </p>
-                  <div class="btn-box">
-                    <a href="">
-                      Read More
-                    </a>
-                    <hr>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="box b-4">
-                <div class="img-box">
-                  <img src="images/s-4.jpg" alt="">
-                </div>
-                <div class="detail-box">
-                  <h6>
-                    Monitor Budgets
-                  </h6>
-                  <p>
-                    See how much the Department is spending and when
-                  </p>
-                  <div class="btn-box">
-                    <a href="">
-                      Read More
-                    </a>
-                    <hr>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+         </div>
+    </div>
+
+<!--Create Container for Signup form-->
+
+
+
+
         </div>
       </div>
-    </section>
+      <div style="height: 100px">
 
+       </div>
     <!-- end service section -->
 
 
