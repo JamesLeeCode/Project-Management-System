@@ -1,1 +1,352 @@
-a
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Project Management System</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    a:link {
+  color: #FF4F5A;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+    .containerLogin
+    {
+      font-family: Arial, Helvetica, sans-serif;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        background-color: white;
+        background: white;
+        width: 65%;
+        margin: 10% auto;
+        border-radius: 5px;
+        margin-top: -15px;
+    }
+
+    .content-holder
+    {
+      background-color: white;
+        text-align: center;
+        color: white;
+        font-size: 14px;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        margin-top: 1px;
+        padding: 20px;
+    }
+
+    .content-holder h2
+    {
+        font-size: 40px;
+        margin: 20px auto;
+    }
+
+    .content-holder p
+    {
+        margin: 30px auto;
+    }
+
+    .content-holder button
+    {
+        border:none;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 6px;
+        background-color: white;
+        width: 150px;
+        margin: 20px auto;
+    }
+
+
+    .box-2{
+        background-color: white;
+
+        margin: 5px;
+    }
+
+    .login-form-container
+    {
+        text-align: center;
+        margin-top: 10%;
+
+    }
+
+    .login-form-container h1
+    {
+        color: black;
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .input-field
+    {
+        box-sizing: border-box;
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 7px;
+        border: 1px solid rgb(168, 168, 168);
+        width: 300px;
+        outline: none;
+    }
+
+    .login-button{
+        box-sizing: border-box;
+        color: white;
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 7px;
+        border: none;
+        width: 250px;
+        outline: none;
+        background-color: #FF4F5A;
+    }
+
+
+
+    .button-2
+    {
+        display: none;
+    }
+    .signup-form-container
+    {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-60%);
+        text-align: center;
+        display: none;
+    }
+
+    .signup-form-container h1
+    {
+        color: black;
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .signup-button{
+        box-sizing: border-box;
+        color: white;
+        font-size: 14px;
+        padding: 13px;
+        border-radius: 7px;
+        border: none;
+        width: 250px;
+        outline: none;
+        background-color: rgb(56, 189, 149);
+    }
+
+    * {
+  font-family: sans-serif; /* Change your font family */
+}
+
+.content-table {
+
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 90%;
+}
+
+.content-table thead tr {
+  background-color: #FF4F5A;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #FF4F5A;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #FF4F5A;
+}
+
+
+</style>
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Project Management System
+            </span>
+          </a>
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Department Dashboard</a>
+                </li>
+                <li class="nav-item" active>
+                  <a class="nav-link" href="#"> New Project <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Help </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="departmentLogin.html"> Log Out </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="slider_item-box layout_padding2">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="img-box">
+                      <div>
+                        <img src="images/depLogo.jpg" alt="" class="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="detail-box">
+                      <div>
+                        <h1>
+                          Progress <br>
+                          Management <br>
+                          <span>
+                            System
+                          </span>
+                        </h1>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                          sed do eiusmod tempor incididunt ut labore
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      <div class="container">
+
+      </div>
+    </section>
+    <!-- end slider section -->
+      <table class="content-table center" style=" margin-left: auto;
+  margin-right: auto; text-align: center;">
+    <thead>
+      <tr>
+        <th style="width:40%;  text-align: center;">Name</th>
+        <th style="  text-align: center;">Municipality</th>
+        <th style=" text-align: center;">Number</th>
+        <th style="  text-align: center;">Completed</th>
+        <th style=" width:11%;  text-align: center;">Select</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="active-row">
+        <td>New Bendor Houses Project</td>
+        <td>Polokwane</td>
+        <td>2565468</td>
+        <td>10%</td>
+        <td>    <button type="button" style="padding-left: 30px; padding-right:30px" class="btn btn-success"> Select </button></td>
+      </tr>
+      <tr class="active-row">
+        <td>New Bendor Houses Project</td>
+        <td>Polokwane</td>
+        <td>2565468</td>
+        <td>10%</td>
+        <td>    <button type="button" style="padding-left: 30px; padding-right:30px" class="btn btn-success"> Select </button></td>
+      </tr>
+      <tr class="active-row" >
+        <td>New Bendor Houses Project</td>
+        <td>Polokwane</td>
+        <td>2565468</td>
+        <td>10%</td>
+        <td>    <button type="button" style="padding-left: 30px; padding-right:30px" class="btn btn-success"> Select </button></td>
+      </tr>
+      <tr class="active-row" >
+        <td>New Bendor Houses Project</td>
+        <td>Polokwane</td>
+        <td>2565468</td>
+        <td>10%</td>
+        <td>    <button type="button" style="padding-left: 30px; padding-right:30px" class="btn btn-success"> Select </button></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+
+        <!--Forms-->
+
+    <!-- end service section -->
+
+
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+
+</html>

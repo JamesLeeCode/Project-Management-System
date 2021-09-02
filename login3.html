@@ -133,6 +133,10 @@
         display: none;
     }
 
+
+
+
+
     .signup-form-container
     {
         position: relative;
@@ -331,14 +335,14 @@
     <!-- end slider section -->
 
 
-          <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,1,0.9);
+          <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
         transition: 0.3s; width: 70% ;margin: auto; height: 400px  ">
           <div style="height: 50px; width:100%">
         <div class="containerLogin">
         <!--Data or Content-->
         <div class="box-1">
             <div class="content-holder">
-              <img src="images/depLogo.jpg" alt="departmentLogo" style="width:360px;height:360px;">
+              <img src="images/inspector.png" alt="departmentLogo" style="width:330px;height:330px;">
             </div>
         </div>
 
@@ -349,27 +353,18 @@
             <div class="login-form-container">
               <div class="custom_heading-container">
                 <h3 class=" ">
-                  System Login
+                  Inspectors Login
                 </h3>
               </div>
               <div style="height: 20px">
 
                </div>
-               <form action="phpScripts/loginScript.php"  method="POST">
                 <input type="text" placeholder="Username" class="input-field">
                 <br><br>
                 <input type="password" placeholder="Password" class="input-field">
                 <br><br>
-                <label for="roles">Please select your role</label>
-                <select name="roles" class="input-field" id="roles">
-                <option value="Department">Department</option>
-                <option value="Contractors">Contractor</option>
-                <option value="Inspectors">Inspector</option>
-                 </select>
-                <br><br>
-                <button  class="login-button"  type="submit">Login</button>
+                <button onclick="location.href = 'departmentDashboard.html';"  class="login-button"  type="button">Login</button>
                 <a href="#">Forgot Your Password???</a>
-                </form>
             </div>
          </div>
     </div>
